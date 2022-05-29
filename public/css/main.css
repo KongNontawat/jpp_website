@@ -1,0 +1,96 @@
+html {
+    scroll-behavior: smooth!important;
+}
+body {
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0 !important;
+    background: transparent !important;
+    transition: all 0.4s;
+    z-index: 100000;
+}
+nav .navbar-logo {
+    width: 100%;
+    max-width: 200px;
+}
+nav.navbar a {
+    color: #fff !important;
+}
+nav.navbar-expand-lg {
+    justify-content: center !important;
+    align-items: center !important;
+}
+nav .container {
+    max-width: 1140px !important;
+}
+
+nav.nav-scroll {
+    background-color: #fff !important;
+    color: #000 !important;
+    padding: 5px 0 !important;
+    box-shadow: 0px 1px 6px -1px rgba(107,107,107,0.39);
+    -webkit-box-shadow: 0px 1px 6px -1px rgba(107,107,107,0.39);
+    -moz-box-shadow: 0px 1px 6px -1px rgba(107,107,107,0.39);
+}
+nav.nav-scroll a {
+    color: #000 !important;
+}
+nav.nav-scroll .nav-item .btn{
+    border-color: #000!important;
+}
+
+#banner {
+    position: relative;
+    padding-top: 10rem !important;
+    background: url("../image/banner.jpg");
+    background-attachment: scroll;
+    z-index: -1;
+    min-height: 600px;
+}
+
+.svg-path-banner {
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    z-index: -1;
+}
+
+@media (min-width: 992px) {
+    .banner-img {
+        min-width: 900px;
+    }
+}
+@media (max-width: 991px) {
+    nav.navbar {
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+    #banner {
+        padding-top: 8rem !important;
+    }
+}
+@media (max-width: 400px) {
+    nav .navbar-logo {
+        max-width: 120px;
+    }
+    #banner {
+        padding-top: 6rem !important;
+    }
+    body {
+        font-size: 17px;
+    }
+}
+
+.swiper-slide i,
+.swiper-slide h4 {
+    color: #a9a9a9;
+}
